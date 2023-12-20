@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "nyutest20231219190041",
+      "defaultValue": "nyutest20231220110243",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }
