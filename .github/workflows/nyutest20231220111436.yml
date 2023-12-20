@@ -1,10 +1,11 @@
-name: Build and deploy .NET Core application to Web App nyutest20231220110243
+name: Build and deploy .NET Core application to Web App nyutest20231220111436
 on:
   push:
     branches:
     - master
 env:
-  AZURE_WEBAPP_NAME: nyutest2023122011test/published
+  AZURE_WEBAPP_NAME: nyutest20231220111436
+  AZURE_WEBAPP_PACKAGE_PATH: nyutest/published
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 8.0.x
   WORKING_DIRECTORY: nyutest
@@ -43,5 +44,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.nyutest20231220110243_544C }}
+        publish-profile: ${{ secrets.nyutest20231220111436_38F0 }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
